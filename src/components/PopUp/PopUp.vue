@@ -38,8 +38,10 @@
         </div>
       </transition>
       <div class="row">
-        <div class="col d-flex align-items-center">
+        <div class="col-12 col-sm-auto mt-3 mt-sm-0">
           <span class="question">Что уменьшаем?</span>
+        </div>
+        <div class="col-12 col-sm-auto mt-3 mt-sm-0 d-flex">
           <choosing-button
             :paddingX='6'
             :paddingY='12'
@@ -255,5 +257,17 @@ export default {
     background: #F0F0F0;
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
+  @media screen and (max-width: 420px){
+    .popup-wrapper{
+      height: 100vh;
+      width: 100%;
+      border-radius: 0;
+      padding: 32px 16px 16px 16px;
+    }
+
+    .last-row{
+      margin-top: 200px;
+    }
   }
 </style>
